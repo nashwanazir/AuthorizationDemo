@@ -79,6 +79,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+
+    public String getName(String email){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query="SELECT student_name from student WHERE student_email='"+email+"'";
+        Cursor c=db.rawQuery(query,null);
+        String name = null;
+        if (c.moveToFirst()) {
+            do{
+                name = c.getString(c.getColumnIndex("student_name"));
+            }while (c.moveToNext());
+
+        }
+            return name;
+
+    }
+
     // Check student exist or not
      public boolean check(String email) {
 

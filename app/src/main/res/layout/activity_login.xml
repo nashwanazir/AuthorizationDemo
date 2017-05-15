@@ -52,9 +52,18 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="5dp"
             android:inputType="textPassword" />
+
+        <!-- Remember me option -->
+        <CheckBox
+            android:id="@+id/remcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:textColor="@color/secColor"
+            android:layout_marginBottom="10dp"/>
 
         <!-- Login button -->
 
@@ -66,7 +75,6 @@
             android:background="@color/secColor"
             android:text="Login"
             android:textColor="#FFFFFF" />
-
 
         <!-- Link to SignUp -->
         <TextView

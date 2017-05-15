@@ -19,7 +19,7 @@
 
             <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:text="Create new Account"
                 android:textColor="@color/colorPrimary"
                 android:textSize="20dp"
@@ -29,15 +29,14 @@
             <!-- Name -->
             <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:textColor="@color/secColor"
                 android:text="Student Name"/>
 
             <EditText android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="10dp"/>
 
 
             <!--  Email  -->
@@ -49,8 +48,7 @@
             <EditText android:id="@+id/reg_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="10dp"/>
 
             <!-- Password -->
             <TextView android:layout_width="match_parent"
@@ -62,7 +60,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Confirm Password -->
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secColor"
+                android:text="Confirm Password"/>
+
+            <EditText android:id="@+id/con_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_marginBottom="10dp"/>
 
 
             <!-- SignUp Button -->
