@@ -39,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/email"
             android:layout_marginTop="5dp" />
 
         <!--  Password -->
@@ -54,6 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/pass"
             android:inputType="textPassword" />
 
         <LinearLayout
@@ -77,7 +79,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Forgot Password?"
-
             android:layout_weight="1.5"
             android:textColor="@color/secColor"/>
 

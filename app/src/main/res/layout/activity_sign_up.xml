@@ -36,6 +36,7 @@
             <EditText android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/nme"
                 android:layout_marginBottom="10dp"/>
 
 
@@ -48,6 +49,7 @@
             <EditText android:id="@+id/reg_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/email"
                 android:layout_marginBottom="10dp"/>
 
             <!-- Password -->
@@ -60,6 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
+                android:drawableLeft="@drawable/pass"
                 android:layout_marginBottom="10dp"/>
 
             <!-- Confirm Password -->
@@ -72,6 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
+                android:drawableLeft="@drawable/pass"
                 android:layout_marginBottom="10dp"/>
 
 
