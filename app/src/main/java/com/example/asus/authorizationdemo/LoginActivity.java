@@ -2,6 +2,8 @@ package com.example.asus.authorizationdemo;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Looper;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     DatabaseHelper databaseHelper = new DatabaseHelper(LoginActivity.this);
     EditText email, password;
     Button login;
-    TextView link_signup;
+    TextView link_signup,forgotpass;
     CheckBox rem;
     Session session;
 
@@ -32,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password);
         login = (Button) findViewById(R.id.btnLogin);
         link_signup = (TextView) findViewById(R.id.link_signup);
+        forgotpass= (TextView) findViewById(R.id.forgotpass);
         rem= (CheckBox) findViewById(R.id.remcheck);
 
         session = new Session(LoginActivity.this);
@@ -45,6 +48,7 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(in);
             finish();
         }
+
 
         // OnClickListener for login button
         login.setOnClickListener(new View.OnClickListener() {
@@ -86,6 +90,20 @@ public class LoginActivity extends AppCompatActivity {
             }
 
 
+        });
+
+        // Clicking forgot password will show a dialog
+        forgotpass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this, R.style.AlertDialogTheme);
+                builder.setMessage("Please contact help@auth.com for resetting password");
+                builder.setCancelable(true);
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
         });
 
         // Link to SignUp Activity
