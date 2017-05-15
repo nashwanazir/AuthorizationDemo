@@ -10,6 +10,8 @@ SignUp Activity(where new students can create an account),
 
 and Welcome Activity(student is directed to Welcome Activity once logged in). 
 
+The Login Activity contains Remember me option for Student Session Management. 
+
 
 
 
