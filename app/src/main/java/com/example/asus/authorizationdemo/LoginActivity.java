@@ -100,6 +100,7 @@ public class LoginActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this, R.style.AlertDialogTheme);
                 builder.setMessage("Please contact help@auth.com for resetting password");
                 builder.setCancelable(true);
+                builder.setTitle("Forgot Password?");
 
                 AlertDialog dialog = builder.create();
                 dialog.show();
